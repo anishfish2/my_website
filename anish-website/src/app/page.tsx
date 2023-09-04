@@ -47,7 +47,7 @@ export default function Home() {
         <div className="pl-8 sm:pl-4 md:pl-20 lg:pl-24 xl:pl-32 pt-2">Karthik</div>
       </div>
       <div className="z-1 w-1/2 text-[#000000] ml-20 sm:ml-60 md:ml-32 lg:ml-60 xl:ml-96 mt-20">
-        <div className={`text-2xl sm:text-lg md:text-5xl lg:text-2xl xl:text-5xl   ${poppins700.className}`}>Hi I'm Anish.</div>
+        <div className={`text-2xl sm:text-xl md:text-5xl lg:text-4xl xl:text-5xl   ${poppins700.className}`}>Hi I'm Anish.</div>
         <div className={`text-sm sm:text-lg md:text-lg lg:text-lg xl:text-2xl  mt-12 ${poppins300.className}`}>Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
         <div className={`text-sm sm:text-lg md:text-lg lg:text-lg xl:text-2xl  mt-12 ${poppins300.className}`}>Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
         {/* <div className="z-5 relative h-0 flex flex-row justify-end">
