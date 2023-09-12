@@ -51,14 +51,14 @@ export default function Home() {
       </div>
       <div className="z-1 mt-120 relative bg-[#FFFFFF]/50">
         <div className="z-0 relative -translate-y-32 overflow-visible w-full flex flex-row justify-end ">
-          <Image className="z-4 absolute w-52 sm:w-72 md:w-72 lg:w-80 xl:w-140 2xl:w-200 h-52 sm:h-72 md:h-72 lg:h-80 xl:h-140 2xl:h-200" src={bambooRight2} alt="bambooRight1"></Image>
+          <Image className="z-4 absolute w-72 sm:w-80 md:w-96 lg:w-96 xl:w-140 2xl:w-200 h-72 sm:h-80 md:h-96 lg:h-96 xl:h-140 2xl:h-200 md:-mt-8 lg:-mt-8 xl:-mt-32 2xl:-mt-52" src={bambooRight2} alt="bambooRight1"></Image>
         </div>
         <div className="z-1 relative flex flex-row justify-around">
           <div className={`mt-96 text-5xl text-black ${bakbak.className}`}> 
             LATEST PROJECTS
           </div>
-          <div>
-
+          <div className="flex flex row justify-around">
+          
           </div>
         </div>
       </div>
