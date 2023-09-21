@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { Bakbak_One, Poppins } from 'next/font/google'
 import koi1 from '../app/art/koi1.png'; 
@@ -7,6 +8,11 @@ import bambooRight1 from '../app/art/bamboo right.png'
 import line1 from '../app/art/line_vector.png'
 import circle1 from '../app/art/Ellipse 1.png'
 import bambooRight2 from '../app/art/bamboo1.png'
+import Head from "next/head";
+
+import * as React from "react"
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 const poppins200 = Poppins({ weight: '200', subsets: ['latin'] })
 const poppins300 = Poppins({ weight: '300', subsets: ['latin'] })
@@ -19,6 +25,43 @@ const poppins800 = Poppins({ weight: '800', subsets: ['latin'] })
 const bakbak = Bakbak_One({ weight: '400', subsets: ['latin'] })
 
 export default function Home() {
+
+  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+    {
+      loop: true,
+    },
+    [
+      (slider) => {
+        let timeout: ReturnType<typeof setTimeout>
+        let mouseOver = false
+        function clearNextTimeout() {
+          clearTimeout(timeout)
+        }
+        function nextTimeout() {
+          clearTimeout(timeout)
+          if (mouseOver) return
+          timeout = setTimeout(() => {
+            slider.next()
+          }, 8000)
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true
+            clearNextTimeout()
+          })
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false
+            nextTimeout()
+          })
+          nextTimeout()
+        })
+        slider.on("dragStarted", clearNextTimeout)
+        slider.on("animationEnded", nextTimeout)
+        slider.on("updated", nextTimeout)
+      },
+    ]
+  )
+
   return (
     <div className={`w-auto h-auto overflow-x-auto bg-[#D9D9D9] ${poppins600.className}`}>
       <div className="z-3 relative overflow-visible w-full flex flex-row justify-end ">
@@ -45,21 +88,50 @@ export default function Home() {
           blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
         </div>
       </div>
-      <div className="z-2 relative pt-40">
+      <div className="z-2 relative xl:pt-40">
         <Image className="absolute pt-20" src={circle1} alt="circle1"></Image>
         <Image className="absolute" src={bambooLeft1} alt="bambooLeft1"></Image>
       </div>
-      <div className="z-1 mt-120 relative bg-[#FFFFFF]/50">
+      <div className="z-1 mt-40 lg:mt-120 relative bg-[#FFFFFF]/50">
         <div className="z-0 relative -translate-y-32 overflow-visible w-full flex flex-row justify-end ">
           <Image className="z-4 absolute w-72 sm:w-80 md:w-96 lg:w-96 xl:w-140 2xl:w-200 h-72 sm:h-80 md:h-96 lg:h-96 xl:h-140 2xl:h-200 md:-mt-8 lg:-mt-8 xl:-mt-32 2xl:-mt-52" src={bambooRight2} alt="bambooRight1"></Image>
         </div>
-        <div className="z-1 relative flex flex-row justify-around">
-          <div className={`mt-96 text-5xl text-black ${bakbak.className}`}> 
+        <div className="z-1 relative flex flex-row justify-start">
+          <div className={`mt-20 ml-20 text-5xl text-black ${bakbak.className}`}> 
             LATEST PROJECTS
           </div>
-          <div className="flex flex row justify-around">
-          
+        </div>
+      </div>
+      <div className="flex flex-row justify-center items-center">
+        <div ref={sliderRef} className="keen-slider">
+          <div className="keen-slider__slide text-black flex flex-row justify-around items-center">
+            <div>
+              <Image src={koi1} alt="slide1"></Image>
+            </div>
+            <div>
+              <div className="flex flex-col items-center">
+                <Image src={koi1} alt="slide1"></Image>
+                <div>Text About Activity</div>
+                <Image src={koi1} alt="slide1"></Image>
+              </div>
+            </div>
           </div>
+          <div className="keen-slider__slide text-black flex flex-row justify-around items-center">
+            <div>
+              <Image src={koi1} alt="slide1"></Image>
+            </div>
+            <div>
+              <div className="flex flex-col items-center">
+                <Image src={koi1} alt="slide1"></Image>
+                <div>Text About Activity</div>
+                <Image src={koi1} alt="slide1"></Image>
+              </div>
+            </div>
+          </div>
+          <div className="keen-slider__slide text-black">3</div>
+          <div className="keen-slider__slide text-black">4</div>
+          <div className="keen-slider__slide text-black">5</div>
+          <div className="keen-slider__slide text-black">6</div>
         </div>
       </div>
     </div>
