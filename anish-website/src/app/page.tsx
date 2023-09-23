@@ -98,7 +98,7 @@ export default function Home() {
       <div className="z-2 relative">
         <div className="z-0 abosolute width-full flex flex-row justify-end">
           <Image
-            className="absolute mt-20 lg:mr-0 xl:mr-20 2xl:mr-96 w-40 sm:w-72 md:w-96 lg:w-120 xl:w-160 2xl:w-200 h-40 sm:h-72 md:h-96 lg:h-120 xl:h-160 2xl:h-200"
+            className="absolute mt-20 lg:mr-0 xl:mr-16 2xl:mr-20 3xl:mr-60 w-40 sm:w-72 md:w-96 lg:w-120 xl:w-160 2xl:w-200 h-40 sm:h-72 md:h-96 lg:h-120 xl:h-160 2xl:h-200"
             src={koi1}
             alt="koi1"
           ></Image>

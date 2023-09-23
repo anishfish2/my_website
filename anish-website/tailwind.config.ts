@@ -25,6 +25,9 @@ const config: Config = {
         '280': '70rem',
         '300': '75rem',
       },
+      screens: {
+        '3xl': '2200px', 
+      },
     },
   },
   
