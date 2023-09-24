@@ -42,6 +42,13 @@ import chiron from "../app/art/chiron.png";
 import chiron_label from "../app/art/chiron_label.svg";
 import melanoma from "../app/art/melanoma.png";
 import melanoma_label from "../app/art/melanoma_label.svg";
+import bambooleft2 from "../app/art/bamboo left2.png";
+import circle2 from "../app/art/circle2.png";
+import orange_bg from "../app/art/orange_bg.svg";
+import activities from "../app/art/activities.png";
+import black_bar from "../app/art/black_bar.svg";
+import circle3 from "../app/art/circle3.svg";
+import bamboo_right3 from "../app/art/bambooRight3.png"
 
 import Head from "next/head";
 
@@ -59,7 +66,16 @@ const poppins800 = Poppins({ weight: "800", subsets: ["latin"] });
 
 const bakbak = Bakbak_One({ weight: "400", subsets: ["latin"] });
 
-const inter = Inter({ weight: "200", subsets: ["latin"] });
+
+const inter100 = Inter({ weight: "100", subsets: ["latin"] });
+const inter200 = Inter({ weight: "200", subsets: ["latin"] });
+const inter300 = Inter({ weight: "300", subsets: ["latin"] });
+const inter400 = Inter({ weight: "400", subsets: ["latin"] });
+const inter500 = Inter({ weight: "500", subsets: ["latin"] });
+const inter600 = Inter({ weight: "600", subsets: ["latin"] });
+const inter700 = Inter({ weight: "700", subsets: ["latin"] });
+const inter800 = Inter({ weight: "800", subsets: ["latin"] });
+const inter900 = Inter({ weight: "900", subsets: ["latin"] });
 
 export default function Home() {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
@@ -136,7 +152,7 @@ export default function Home() {
 
   return (
     <div
-      className={`w-auto h-auto overflow-x-auto bg-[#D9D9D9] ${poppins600.className}`}
+      className={`w-auto h-auto  bg-[#D9D9D9] ${poppins600.className}`}
     >
       <div className="z-3 relative overflow-visible w-full flex flex-row justify-end ">
         <Image
@@ -202,7 +218,7 @@ export default function Home() {
             className={`text-lg sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl mt-20 ml-8 text-black ${bakbak.className}`}
           >
             LATEST PROJECTS
-            <div className={`text-xs lg:text-lg text-black ${inter.className}`}>
+            <div className={`text-xs lg:text-lg text-black ${inter400.className}`}>
               Click and Drag to slide!
             </div>
           </div>
@@ -494,7 +510,7 @@ export default function Home() {
                   />
                   <div className="flex flex-col w-full gap-4">
                     <div className="text-xxs pt-8 sm:pt-0 sm:text-xs md:text-md lg:text-md xl:text-md 2xl:text-3xl text-center mx-auto w-full sm:w-2/3">
-                      Neural Network implementation to unscrable sets of images into their correct orientation for Datathon 2022
+                      Neural Network implementation to unscramble sets of images into their correct orientation for Datathon 2022
                     </div>
                     <div className=" text-xxs sm:text-xss md:text-sm lg:text-sm xl:text-sm 2xl:text-lg text-center mx-auto">
                       Python, Tensorflow, Pandas, Numpy, Keras
@@ -792,6 +808,77 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Image className="relative" src={bambooleft2} alt="bambooleft2"></Image>
+      <div className="z-3 relative flex flex-col justify-end items-end mt-40">
+        <Image
+          className="z-4 absolute"
+          src={circle2}
+          alt="circle2"
+        ></Image>
+      </div>
+      
+      <div className="relative flex flex-row justify-between items-start -mt-120">
+        <Image className="w-full absolute z-0" src={orange_bg} alt="orange_bg"></Image>
+        <div className="md:pl-20 pt-32 sm:pt-52 md:pt-120 xl:pt-160 2xl:pt-200 3xl:pt-300 w-2/3">
+          <div ref={sliderRef} className="keen-slider flex-row justify-center">
+            <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 px-12 items-center">
+              <div className="flex flex-col">
+                <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>tamuhack</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Logistics Lead</div>
+                <div className={`text-xxs sm:text-2xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
+                Logistics Lead for TAMUhack, Texas A&M University’s largest annual hackathon (800+ hackers). I manage food, prizes, and sponsors worth over $70,000 for two hackathons each year. 
+                In addition, I help maintain the organization website which is used by 4000+ users each event cycle </div>
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://tamuhack.org/">website</a></div>
+              </div>
+            </div>
+            
+            <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 px-12 items-center">
+              <div className="flex flex-col">
+                <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>Aggie Data Science Club</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Vice President</div>
+                <div className={`text-xxs lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
+                Vice President for Aggie Data Science Club, the premiere data science organization @ Texas A&M. I source contacts from Apple, Google, GM, Charles Schwab and many more, 30+ university professors, 
+                500+ A&M students, and members of academia and teach internal sub-groups about the data science lifecycle using Kaggle, Jupyter notebook, Python, and a variety of libraries. </div>
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://tamuhack.org/">website</a></div>
+              </div>
+            </div>
+            <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 px-12 items-center">
+              <div className="flex flex-col">
+                <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>tamuhack</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Logistics Lead</div>
+                <div className={`text-xxs lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
+                Logistics Lead for TAMUhack, Texas A&M University’s largest annual hackathon (800+ hackers). I manage food, prizes, and sponsors worth over $70,000 for two hackathons each year. 
+                In addition, I help maintain the organization website which is used by 4000+ users each event cycle </div>
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://tamuhack.org/">website</a></div>
+              </div>
+            </div>
+            <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 px-12 items-center">
+              <div className="flex flex-col">
+                <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>tamuhack</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Logistics Lead</div>
+                <div className={`text-xxs lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
+                Logistics Lead for TAMUhack, Texas A&M University’s largest annual hackathon (800+ hackers). I manage food, prizes, and sponsors worth over $70,000 for two hackathons each year. 
+                In addition, I help maintain the organization website which is used by 4000+ users each event cycle </div>
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://tamuhack.org/">website</a></div>
+              </div>
+            </div>
+            <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 px-12 items-center">
+              <div className="flex flex-col">
+                <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>tamuhack</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Logistics Lead</div>
+                <div className={`text-xxs lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
+                Logistics Lead for TAMUhack, Texas A&M University’s largest annual hackathon (800+ hackers). I manage food, prizes, and sponsors worth over $70,000 for two hackathons each year. 
+                In addition, I help maintain the organization website which is used by 4000+ users each event cycle </div>
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://tamuhack.org/">website</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Image className="w-1/5 mt-20 sm:mt-80 xl:mt-120 mr-8 xl:mr-40 relative z-1" src={activities} alt="orange_bg"></Image>
+      </div>
+      <Image className="w-2/3 3xl:-mt-80 absolute z-3" src={black_bar} alt="black_bar"></Image>
+
     </div>
+    
   );
 }
