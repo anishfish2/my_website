@@ -944,6 +944,7 @@ export default function Home() {
       <div id="contact" className="text-white relative w-full flex flex-row justify-evenly text-sm md:text-xl 2xl:text-3xl">
         <div><a href="anishkarthik21@gmail.com">Email</a></div>
         <div><a href="https://www.linkedin.com/in/anishkarthik/">LinkedIn</a></div>
+        <div><a href="https://github.com/anishfish2">Github</a></div>
       </div>
     </div>
     
