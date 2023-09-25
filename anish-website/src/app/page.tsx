@@ -936,7 +936,7 @@ export default function Home() {
               Hobbies
             </div>
             <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right">
-              Piano, Overwatch, Valorant, League of Legends, Risk of Rain 2
+              Piano, Overwatch, Valorant, League of Legends, (I love Riot Games), Risk of Rain 2
             </div>
           </div>
         </div>
