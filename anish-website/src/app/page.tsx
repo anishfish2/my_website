@@ -49,6 +49,7 @@ import activities from "../app/art/activities.png";
 import black_bar from "../app/art/black_bar.svg";
 import circle3 from "../app/art/circle3.svg";
 import bamboo_right3 from "../app/art/bambooRight3.png"
+import cool_section from "../app/art/cool_section.svg"
 
 import Head from "next/head";
 
@@ -170,9 +171,10 @@ export default function Home() {
       </div>
       <div className="z-1 relative width-full flex flex-row justify-start items-center mt-24 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32 2xl:mt-60 ml-8 sm:ml-20 md:ml-16 lg:ml-32 xl:ml-32 2xl:ml-44 gap-2 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 text-black text-xs sm:text-md md:text-lg lg:text-lg xl:text-xl 2xl:text-4xl">
         {/* <Image className="ml-8 sm:ml-12 md:ml-20 lg:ml-28 xl:ml-32 w-12 sm:w-12 md:w-12 lg:w-12 xl:w-12 2xl:w-12 h-12 sm:h-12 md:h-12 lg:h-12 xl:h-12 2xl:h-312" src={toplines} alt="toplines"></Image> */}
-        <a>about me</a>
-        <a>my projects</a>
-        <a>contact</a>
+        <a href="#about_me">about me</a>
+        <a href="#projects">my projects</a>
+        <a href="#activities">activities</a>
+        <a href="#contact">contact</a>
       </div>
       <div className="z-2 relative">
         <div className="z-0 abosolute width-full flex flex-row justify-end">
@@ -195,7 +197,7 @@ export default function Home() {
         <div
           className={`z-1 relative ml-8 sm:ml-12 md:ml-16 lg:ml-28 xl:ml-32 2xl:ml-44 text-black text-xs sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-4xl w-2/5 ${poppins200.className}`}
         >
-          visit @ anish.fish
+          Hi, I'm Anish. Nice to meet you. 
         </div>
       </div>
       <div className="z-2 relative xl:pt-40">
@@ -220,7 +222,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={`flex flex-row justify-center items-center ${poppins600.className}`}>
+        <div id="projects" className={`flex flex-row justify-center items-center ${poppins600.className}`}>
           <div ref={sliderRef} className="keen-slider flex-row">
             <div className="keen-slider__slide text-black flex flex-col sm:flex-row h-1/2 gap-8 px-12 items-center justify-start">
               <div className="w-1/2">
@@ -816,12 +818,12 @@ export default function Home() {
       
       <div className="relative flex flex-row justify-between items-start -mt-120">
         <Image className="w-full absolute z-0" src={orange_bg} alt="orange_bg"></Image>
-        <div className="md:pl-20 pt-24 xs:pt-52 sm:pt-52 md:pt-120 xl:pt-160 2xl:pt-200 3xl:pt-300 w-2/3">
-          <div ref={sliderRef} className="keen-slider">
+        <div className="pl-4 md:pl-20 pt-24 xs:pt-52 sm:pt-52 md:pt-120 xl:pt-160 2xl:pt-200 3xl:pt-300 w-2/3">
+          <div ref={sliderRef} id="activities" className="keen-slider">
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
               <div className="flex flex-col">
                 <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>tamuhack</div>
-                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Logistics Lead</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Logistics Lead (Current)</div>
                 <div className={`text-xxs xxs:text-xxs xs:text-sm sm:text-xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
                 TAMUhack: Texas A&M University’s largest annual hackathon (800+ hackers). I manage food, prizes, and sponsors worth over $70,000 for two hackathons each year. 
                 In addition, I help maintain the organization website which is used by 4000+ users each event cycle. </div>
@@ -831,7 +833,7 @@ export default function Home() {
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
               <div className="flex flex-col">
                 <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>Aggie Data Science Club</div>
-                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Vice President</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Vice President (Current)</div>
                 <div className={`text-xxs xxs:text-xxs xs:text-sm sm:text-xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
                   Vice President and Founding Member of Aggie Data Science Club: Texas A&M's premiere organization dedicated to teaching and learning about data science.
                   Source contacts from 20+ companies including Google, Apple, GM, Charles Schwab, and more, 30+ university professors, 500+ A&M students, and multiple members of academia.
@@ -842,7 +844,7 @@ export default function Home() {
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
               <div className="flex flex-col">
                 <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>Art Etc.</div>
-                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>IT Lead</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>IT Lead (Current)</div>
                 <div className={`text-xxs xxs:text-xxs xs:text-sm sm:text-xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
                   IT Lead at Art Etc., a place for all TAMU undergraduate, graduate, and faculty to find their creative freedoms and explore their artistic goals freely. I design from scratch 
                   and maintain website through three iterations. Handle technological issues regarding logistics and membership communications. 
@@ -853,12 +855,12 @@ export default function Home() {
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
               <div className="flex flex-col">
                 <div className={`sm:text-5xl xl:text-8xl 3xl:text-9xl text-white ${inter700.className}`}>Rath Research</div>
-                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Quantitative Trader</div>
+                <div className={`text-xs xl:text-3xl 3xl:text-3xl text-white sm:pt-8 ${inter200.className}`}>Quantitative Trader (Current)</div>
                 <div className={`text-xxs xxs:text-xxs xs:text-sm sm:text-xl lg:text-2xl 2xl:text-4xl 3xl:text-5xl text-white pt-4 lg:pt-24 2xl:pt-40 leading-normal ${inter600.className}`}> 
                   Quantitative Trader for Rath Research under the Reveille Fund at Texas A&M. I manage a Quant Silo in a net $8M investment Fund. We utilize ensemble and NeuroEvolution of Augmenting Topologies (NEAT) neural networks 
                   to make stock picks as benched against the S&P500.
                   </div>
-                {/* <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://www.aggiedatascience.com/">website</a></div> */}
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://mays.tamu.edu/department-of-finance/the-reveille-fund/">website</a></div>
               </div>
             </div>
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
@@ -869,7 +871,7 @@ export default function Home() {
                   Student Researcher at the Brain Networks Lab at Texas A&M utilizing Reinforcement learning, NeuroEvolution of Augmenting Topologies (NEAT), Delayed feedback Neural Networks, and 
                   novel environments to research the evolution of memory in neural networks to elucidate how we humans might have developed our own memory.
                 </div>
-                {/* <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://www.aggiedatascience.com/">website</a></div> */}
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://people.engr.tamu.edu/choe/choe/bnl/home.html">website</a></div>
               </div>
             </div>
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
@@ -880,7 +882,7 @@ export default function Home() {
                   Student Researcher at the Embedded Systems Processing Lab at Texas A&M utilizing classification methods, anomaly detection algorithms, and supervised learning to study
                   how we can predict fevers through sleep data.
                 </div>
-                {/* <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://www.aggiedatascience.com/">website</a></div> */}
+                <div className="pt-8 md:pt-16 xl:pt-32 3xl:pt-40 sm:text-3xl text-white"><a  href="https://jafari.tamu.edu/">website</a></div>
               </div>
             </div>
             <div className="keen-slider__slide text-black flex flex-row justify-center h-1/2 gap-8 items-center">
@@ -900,8 +902,49 @@ export default function Home() {
         <Image className="w-1/5 mt-20 sm:mt-80 xl:mt-120 mr-8 xl:mr-40 relative z-1" src={activities} alt="orange_bg"></Image>
       </div>
       <Image className="w-2/3 3xl:-mt-80 absolute z-3 bg-white" src={black_bar} alt="black_bar"></Image>
-      <Image className="w-2/3 3xl:-mt-80 absolute z-3" src={circle3} alt="circle3"></Image>
-      <Image className="w-2/3 3xl:-mt-80 absolute z-3" src={bamboo_right3} alt="bamboo_right3"></Image>
+      <Image className="w-1/3 3xl:-mt-80 absolute z-3" src={circle3} alt="circle3"></Image>
+      <div className="relative flex flex-row justify-end">
+        <Image className="w-1/3 3xl:-mt-80 absolute z-3" src={bamboo_right3} alt="bamboo_right3"></Image>
+      </div>
+      <div className="relative sm:mt-100 lg:mt-200 2xl:mt-280 flex flex-row justify-end">
+        <Image className="w-full absolute z-3" src={cool_section} alt="cool_section"></Image>
+        <div className="z-4 text-white absolute text-9xl w-1/2 flex flex-row justify-center mr-12 lg:mr-32">
+          <div className="flex flex-col mt-36 xs:mt-60 sm:mt-80 lg:mt-140 2xl:mt-200 3xl:mt-300">
+            <div id="about_me" className="text-sm sm:text-3xl lg:text-8xl 2xl:text-9xl text-right">about me</div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right sm:mt-8 xl:mt-32 underline">
+              Junior at Texas A&M
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right">
+              B.S. Computer Science & B.S. Mathematics + Statistics
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right sm:mt-8 xl:mt-8 underline">
+              Interests
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right">
+              Deep Learning, Reinforcement learning, 3D Model Generation
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right sm:mt-8 xl:mt-8 underline">
+              Skills
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right">
+              Python, C++, Javascript, Java, R
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right">
+              Pytorch, Numpy, Pandas, SQL, React/Next.js
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right sm:mt-8 xl:mt-8 underline">
+              Hobbies
+            </div>
+            <div className="text-xxs sm:text-xs lg:text-sm xl:text-xl 2xl:text-3xl text-right">
+              Piano, Overwatch, Valorant, League of Legends, Risk of Rain 2
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" className="text-white relative w-full flex flex-row justify-evenly text-sm md:text-xl 2xl:text-3xl">
+        <div><a href="anishkarthik21@gmail.com">Email</a></div>
+        <div><a href="https://www.linkedin.com/in/anishkarthik/">LinkedIn</a></div>
+      </div>
     </div>
     
   );
