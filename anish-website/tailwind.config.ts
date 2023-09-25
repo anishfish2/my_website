@@ -30,6 +30,8 @@ const config: Config = {
       },
       screens: {
         '3xl': '2200px', 
+        'xs': '500px', 
+        'xxs': '300px',
       },
     },
   },
