@@ -78,10 +78,6 @@ const inter700 = Inter({ weight: "700", subsets: ["latin"] });
 const inter800 = Inter({ weight: "800", subsets: ["latin"] });
 const inter900 = Inter({ weight: "900", subsets: ["latin"] });
 
-export const metadata = {
-  title: "Anish Karthik's Website",
-  description: "",
-}
 
 export default function Home() {
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
